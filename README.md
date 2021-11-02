@@ -9,12 +9,15 @@ UI building blocks
 - styles
 - selector
 
+### SPECIAL
+- element ref: <input type="text" #inputRef>
+
 ## Binding
 - Property Binding  [src] = "model.url"
 - Event Binding  (click) = "onClicked()"
 - Two Way binding [(ngModel)] = "model"
-  - @Input()    : property binding
-  - @Output()   : event binding
+  - @Input(<alias>)    : property binding
+  - @Output(<alias>)   : event binding
 
 
 
