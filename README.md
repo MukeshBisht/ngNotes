@@ -9,14 +9,11 @@ UI building blocks
 - styles
 - selector
 
-### SPECIAL
-- element ref: <input type="text" #inputRef>
-
 ## Element Refs
-extending element refs ElementRef
+element ref: <input type="text" #inputRef>
 - @ViewChild('selector-name')
+  - @ViewChild('inputRef') inputRef : ElementRef;
 - @ContentChild('select-name')
-@ViewChild('inputRef') inputRef : ElementRef;
 
 ## Binding
 - Property Binding  [src] = "model.url"
