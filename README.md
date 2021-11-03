@@ -20,7 +20,9 @@ element ref: <input type="text" #inputRef>
 - Event Binding  (click) = "onClicked()"
 - Two Way binding [(ngModel)] = "model"
   - @Input(<alias>)    : property binding
+    - @Inout() model: Model;
   - @Output(<alias>)   : event binding
+    - @Output() onAction: EventEmitter<T>;
 
 ## String Interpolation
 - {{ expression }}
