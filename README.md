@@ -59,6 +59,12 @@ element ref: <input type="text" #inputRef>
   - @HostListener('mouseenter') mouseover(eventData: Event) {  }
 - @HostBinding('property') : to bind to host property
   - @HostBinding('style.backgroundColor') bgColor: string;
+
+## Services
+- put business logic in one place and follow DRY pattern
+- Services are singletons within the scope of an injector, Angular DI has a hierarchical injection system, which means that nested injectors can create their own service instances.
+- @Injectable() directive from @angular/core
+- put services in providers array (in @NgModule / @Component)
   
 #
 # TypeScript
