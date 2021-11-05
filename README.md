@@ -53,5 +53,24 @@ element ref: <input type="text" #inputRef>
   - have a leading *
   - Affact a whole area in the DOM (elements get added/removed)
 
+### Custom Directives
+- use Directive() decorator
+- @HostListener('event') : to listen to host events
+  - @HostListener('mouseenter') mouseover(eventData: Event) {  }
+- @HostBinding('property') : to bind to host property
+  - @HostBinding('style.backgroundColor') bgColor: string;
+  
 #
 # TypeScript
+## Getter/Setters
+  ```typescript
+  class foo {
+      private _bar: boolean = false;
+      get bar(): boolean {
+          return this._bar;
+      }
+      set bar(value: boolean) {
+          this._bar = value;
+      }
+  }
+  ```
