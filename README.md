@@ -54,7 +54,7 @@ element ref: <input type="text" #inputRef>
   - Affact a whole area in the DOM (elements get added/removed)
 
 ### Custom Directives
-- use Directive() decorator
+- use Directive() decorator, current ElementRef can be injected 
 - @HostListener('event') : to listen to host events
   - @HostListener('mouseenter') mouseover(eventData: Event) {  }
 - @HostBinding('property') : to bind to host property
@@ -62,6 +62,11 @@ element ref: <input type="text" #inputRef>
   
 #
 # TypeScript
+## class
+```typescript
+  export class foo { }
+```
+  
 ## Getter/Setters
   ```typescript
   class foo {
