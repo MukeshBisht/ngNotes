@@ -75,11 +75,11 @@ element ref: <input type="text" #inputRef>
     { path : "", component : RecipeComponent }];
     RouterModule.forRoot(routes)
   ```
-  - <b>router-outlet</b> directive is responsible for rendering Component on the route ` <router-outlet></router-outlet> `  
-  - <b>routerLink</b> directive used to specify route. ` <a routerLink="/page" >The Page</a>`
-  - "/page" is absolute path and "page" is relative path
-  - <b>routerLinkActive</b> can be used to specify class to add when a route is active. ` <a routerLinkActive="active" routerLink="/page" >The Page</a> `
-  - <b>routerLinkActiveOption</b> to configure active link ` <a routerLinkActive="active" [routerLinkActiveOption]="{exact=true}" routerLink="/page" >The Page</a> `
+- "/page" is absolute path and "page" is relative path, for parameters use :name eg ` "users/:id/:action" `
+- <b>router-outlet</b> directive is responsible for rendering Component on the route ` <router-outlet></router-outlet> `  
+- <b>routerLink</b> directive used to specify route. ` <a routerLink="/page" >The Page</a>`
+- <b>routerLinkActive</b> can be used to specify class to add when a route is active. ` <a routerLinkActive="active" routerLink="/page" >The Page</a> `
+- <b>routerLinkActiveOption</b> to configure active link ` <a routerLinkActive="active" [routerLinkActiveOption]="{exact=true}" routerLink="/page" >The Page</a> `
  
 #
 # TypeScript
